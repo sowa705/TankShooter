@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     public bool Explosive;
     public GameObject ExplosionPS;
     float DamageMultiplier;
+    float time;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,11 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
+        time += Time.deltaTime;
+        if (time>30f)
+        {
+            Destroy(gameObject);
+        }
         if (Input.GetKeyDown(KeyCode.Y)&& Explosive)
         {
             Destroy(gameObject);
