@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 077546fd3a5864b4992a4de837f69ef0, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: 
+  PlayerLives: 4
+  Levels:
+  - XPRequired: 0
+    DamageMultiplier: 1
+    SpecialCooldown: 3
+  - XPRequired: 1000
+    DamageMultiplier: 1.5
+    SpecialCooldown: 2
+  - XPRequired: 2000
+    DamageMultiplier: 2
+    SpecialCooldown: 3
